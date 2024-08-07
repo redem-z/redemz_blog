@@ -4,7 +4,7 @@ date = 2024-08-06T22:59:39+08:00
 draft = false
 description = "Cmake"
 tags = [
-    "CMAKE",
+    "Cmake",
 ]
 
 +++
