@@ -1,7 +1,12 @@
 +++
 title = 'Cmake使用小记'
 date = 2024-08-06T22:59:39+08:00
-draft = true
+draft = false
+description = "Cmake"
+tags = [
+    "CMAKE",
+]
+
 +++
 # CMAKE 小记
 
@@ -32,9 +37,7 @@ add_library的常规用法是添加一个target为STATIC静态库或者SHARED动
 ```cmake
 add_executable(st st1.c xxx1.c xxx2.c ... xxxn.c)
 ```
-
 如果n过于多，显得就很繁琐，这时候就可以使用:
-
 ```cmake
 add_library(objlib OBJECT xxx1.c xxx2.c ... xxxn.c)
 add_executable(st st1.c $<TARGET_OBJECTS:objlib>)
